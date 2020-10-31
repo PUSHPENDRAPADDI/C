@@ -1,0 +1,20 @@
+// This program tell you are teenager or not
+#include <stdio.h>
+int main()
+{
+    int age;
+    printf("Enter your age \n");
+    scanf("%d", &age);
+    if (age > 0 && age < 13)
+    {
+        printf("Your are child");
+    }
+    else if (age >= 13 && age < 20)
+    {
+        printf("You are Teenager just enjoy");
+    }
+    else
+    {
+        printf("You are man");
+    }
+}
