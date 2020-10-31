@@ -1,0 +1,17 @@
+// This program tell you are you underage or not for driving car
+#include <stdio.h>
+int main()
+{
+    int age;
+    printf("Enter your age for driving permit :- ");
+    scanf("%d", &age);
+    printf("Age is %d\n", age);
+    if (age > 21 && age < 85)
+    {
+        printf("your are eligible to drive ");
+    }
+    else
+    {
+        printf("You are not eligible to drive");
+    }
+}
