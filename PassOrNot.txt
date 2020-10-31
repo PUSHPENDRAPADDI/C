@@ -1,0 +1,34 @@
+// This programe give the result of student
+#include <stdio.h>
+int main()
+{
+    int physics, chemistry, math, total, ave;
+    printf("Enter the marks of physics:-");
+    scanf("%d", &physics);
+    printf("Enter the marks of  chemistry:-");
+    scanf("%d", &chemistry);
+    printf("Enter the marks of math :-");
+    scanf("%d", &math);
+    printf("The number of physics is %d\n", physics);
+    printf("The number of chemistry is %d\n", chemistry);
+    printf("The number of math is %d\n", math);
+    total = physics + chemistry + math;
+    printf("Total marks is %d\n", total);
+    ave = total / 3;
+    if (physics > 33 && chemistry > 33 && math > 33)
+    {
+        if (ave < 40)
+        {
+            printf("You get fail");
+        }
+        else
+        {
+            printf("You are pass");
+        }
+    }
+    else
+    {
+        printf("Your subject marks is less to pass");
+    }
+    
+}
