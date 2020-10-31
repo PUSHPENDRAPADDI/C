@@ -1,0 +1,12 @@
+// This program give your age
+#include <stdio.h>
+int main()
+{
+    int CurrentYear, BirthYear,year;
+    printf("Please enter current year \n");
+    scanf("%d", &CurrentYear);
+    printf("Enter your birth year \n");
+    scanf("%d", &BirthYear);
+    year = CurrentYear - BirthYear;
+    printf("You are %d year old \n", year);
+}
