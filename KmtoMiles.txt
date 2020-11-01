@@ -1,0 +1,9 @@
+// This program convert the km into miles
+#include <stdio.h>
+int main(){
+    float km = 0, miles = 0;
+    printf("Enter distance in kilometer = ");
+    scanf("%f",&km);
+    miles = km*0.621371;
+    printf("%f ",miles); 
+}
