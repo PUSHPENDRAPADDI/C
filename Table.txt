@@ -1,0 +1,13 @@
+// This program give table
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Enter the number for table\n");
+    scanf("%d", &num);
+    printf("This is the table of %d\n", num);
+    for (int i = 1; i <= 10; i++)
+    {
+        printf("%d X %d = %d\n", num, i, num * i);
+    }
+}
