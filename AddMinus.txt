@@ -1,0 +1,14 @@
+// This program give the addition and substraction of number
+#include <stdio.h>
+int main()
+{
+    int num1 = 0, num2 = 0, num3 = 0, sum = 0, sub = 0;
+    printf("Enter number of three subjects = ");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    scanf("%d", &num3);
+    sum = num1 + num2 + num3;
+    sub = num1 - num2 - num3;
+    printf("%d is sum ", sum );
+    printf("            %d is substraction ", sub);
+}
