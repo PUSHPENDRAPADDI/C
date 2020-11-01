@@ -1,0 +1,11 @@
+// This programe is for CGPA of student
+#include <stdio.h>
+int main(){
+    float sub1 = 0,sub2 = 0,sub3 = 0,cgpa = 0;
+    printf("Enter number of three subjects = ");
+    scanf("%f",&sub1);
+    scanf("%f",&sub2);
+    scanf("%f",&sub3);
+    cgpa = (sub1+sub2+sub3)/30;
+    printf("%f",cgpa);
+}
