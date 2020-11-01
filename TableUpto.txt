@@ -1,0 +1,16 @@
+// This program print table upto number
+#include <stdio.h>
+int main()
+{
+    int num1, num2;
+    printf("Enter two numbers between which tables you want\n");
+    scanf("%d %d", &num1, &num2);
+    for (int i = num1; i <= num2; i++)
+    {
+        printf("This is the table of %d\n", i);
+        for (int j = 1; j <= 10; j++)
+        {
+            printf("%d X %d = %d\n", i, j, i * j);
+        }
+    }
+}
