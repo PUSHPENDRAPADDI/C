@@ -1,0 +1,35 @@
+// This program give the armstrong number
+#include <stdio.h>
+int main()
+{
+    int num = 0;
+    printf("Enter number to check ARMSTRONG = ");
+    scanf("%d",&num);
+    int num2 = num,onum = num, temp = 0, newnum = 0, count = 0, pow = 1;
+    while (num != 0)
+    {
+        num = num / 10;
+        count = count + 1;
+    }
+    while (num2 != 0)
+    {
+        temp = num2 % 10;
+        pow = temp;
+        for (int i = count; i > 1; i--)
+        {
+            pow = pow * temp;
+        }
+        newnum = newnum + pow;
+        num2 = num2 / 10;
+    }
+    if (newnum == onum)
+    {
+        printf("%d is ARMSTRONG number",onum);
+    }
+    else
+    {
+        printf("%d is not ARMSTRONG number",onum);
+    }
+    
+    
+}
