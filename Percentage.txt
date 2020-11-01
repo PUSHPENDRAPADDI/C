@@ -1,0 +1,14 @@
+// This program give Percetage
+#include <stdio.h>
+int main()
+{
+    float sub1 = 0, sub2 = 0, sub3 = 0, sub4=0,sub5=0, per = 0;
+    printf("Enter number of five subjects = ");
+    scanf("%f", &sub1);
+    scanf("%f", &sub2);
+    scanf("%f", &sub3);
+    scanf("%f", &sub4);
+    scanf("%f", &sub5);
+    per = (((sub1 + sub2 + sub3 + sub4+ sub5)/500)*100);
+    printf("%f percent",per);
+}
