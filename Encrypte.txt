@@ -1,0 +1,9 @@
+// This program encrypt your grade
+#include <stdio.h>
+int main(){
+    char ch = ' ', grade = ' ';
+    printf("Enter your grade for encryption = ");
+    scanf("%c",&ch);
+    grade = ch + 8;
+    printf("%c is Your grade ",grade);
+}
