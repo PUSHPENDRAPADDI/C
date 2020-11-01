@@ -1,10 +1,10 @@
 // Area of square
 #include <stdio.h>
 int main(){
-    int radius = 0;
+    float radius = 0;
     float area = 0;
     printf("Enter radius of circle = ");
-    scanf("%d",&radius);
+    scanf("%f",&radius);
     area = 3.14*(radius*radius);
     printf("Area of circle is = %f", area);
 }
