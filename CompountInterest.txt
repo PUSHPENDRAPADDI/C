@@ -1,0 +1,14 @@
+// This program find the compound interest 
+#include <stdio.h>
+#include <math.h>
+int main(){
+    float pri = 0, rate =0, time = 0, amount = 0, base =0, ci=0;
+    printf("Enter principle, rate, time :- ");
+    scanf("%f",&pri);
+    scanf("%f",&rate);
+    scanf("%f",&time);
+    base = 1+(rate/100);
+    amount = pri*(pow(base, time));
+    ci = amount - pri;
+    printf("%f is compound interest",ci);
+}
