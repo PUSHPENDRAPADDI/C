@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    char ch = ' ';
+    printf("Enter any charecter to know ASCCI code = ");
+    scanf("%c",&ch);
+    printf("ASCCIcode is %d",ch);
+}
