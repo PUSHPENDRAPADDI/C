@@ -1,0 +1,48 @@
+#include <stdio.h>
+int main()
+{
+    int unit;
+    float amount, surcharge, totalAmount;
+    printf("Enter your unit \n");
+    scanf("%d", &unit);
+    if (unit >= 1 && unit <= 50)
+    {
+        amount = unit * 0.50;
+        surcharge = (20 * amount)/100;
+        totalAmount = amount + surcharge;
+        printf("unit is %d \n", unit);
+        printf("Your bill is %f \n", amount, "Rs");
+        printf("Your surcharge is %f \n", surcharge);
+        printf("Your total amount is %f", totalAmount );
+    }
+    if (unit > 50 && unit <= 150)
+    {
+        amount = unit * 0.50;
+        surcharge = (20 * amount)/100;
+        totalAmount = amount + surcharge;
+        printf("unit is %d \n", unit);
+        printf("Your bill is %f \n", amount, "Rs");
+        printf("Your surcharge is %f \n", surcharge);
+        printf("Your total amount is %f", totalAmount );
+    }
+    if (unit > 150 && unit <= 250)
+    {
+        amount = unit * 0.50;
+        surcharge = (20 * amount)/100;
+        totalAmount = amount + surcharge;
+        printf("unit is %d \n", unit);
+        printf("Your bill is %f \n", amount, "Rs");
+        printf("Your surcharge is %f \n", surcharge);
+        printf("Your total amount is %f", totalAmount );
+    }
+    if (unit > 250)
+    {
+       amount = unit * 0.50;
+        surcharge = (20 * amount)/100;
+        totalAmount = amount + surcharge;
+        printf("unit is %d \n", unit);
+        printf("Your bill is %f \n", amount, "Rs");
+        printf("Your surcharge is %f \n", surcharge);
+        printf("Your total amount is %f", totalAmount );
+    }
+}
