@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    float income = 0,tax=1;
+    printf("Enter your income = ");
+    scanf("%f",&income);
+    if (income<2.5)
+    {
+        printf("No tax is required");
+    }
+    else if (income>=2.5 && income<5)
+    {
+        tax = 5*(income-2.5)/100;
+    }
+    else if (income>=5 && income<10)
+    {
+        tax = 20*(income-2.5)/100;
+    }
+    else if (income>=10)
+    {
+        tax = 30*(income-2.5)/100;
+    }
+    printf("Tax is %f",tax);
+    
+}
