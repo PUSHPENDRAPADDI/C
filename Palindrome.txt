@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int len;
+    printf("Enter the length of name :- ");
+    scanf("%d", &len);
+    char name[len], rname[len];
+    printf("Enter the name :- \n");
+    scanf("%s",&name);
+    for (int i = len-1; i >= 0; i--)
+    {
+    rname[i] = name[i];
+    printf("%c", rname[i]);
+    }printf("\n");
+    if (name[len] == rname[len])
+    {
+        printf("the is pelindrome");
+    }
+    else
+    {
+        printf("This is not pelindrome");
+    }
+    
+}
