@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+    int len, mid,flag = 0, start1 = 0;
+    printf("Enter the length of name :- ");
+    scanf("%d", &len);
+    char name[len], rname[len];
+    printf("Enter the name :- \n");
+    scanf("%s", &name);
+    if (len%2 ==0)
+    {
+        mid = len/2+1;
+    }
+    else
+    {
+        mid = len/2;
+    }
+    int start2 = mid;
+    while (start1 < mid && start2<len)
+    {
+            if (name[start1] == name[start2]){
+                start1 = start1+1;
+                start2 = start2 +1;
+            }
+            else
+            {
+                flag = 1;
+                break;
+            }
+    }
+    if (flag == 0)
+    {
+        printf("This is symmetrical");
+    }
+    else
+    {
+        printf("This is not symetrical");
+    }
+}
