@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int choice, rnum;
+    char ch[] = "rps", player;
+    srand(time(0));
+    rnum = rand() % 3;
+    choice = ch[rnum];
+    printf("Enter first letter of your choice = ");
+    scanf("%s", &player);
+    if (player == 'r' && choice == 'p' || player == 'p' && choice == 's' || player == 's' && choice == 'r')
+    {
+        printf("Player loss the game");
+    }
+    else if (player == 'r' && choice == 's' || player == 'p' && choice == 'r' || player == 's' && choice == 'p')
+    {
+        printf("Player win the game");
+    }
+    else if(player==choice)
+    {
+        printf("Match is draw");
+    }
+    else
+    {
+        printf("Please enter valid entry!!!");
+    }
+    
+}
