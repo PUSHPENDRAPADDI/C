@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int choice, num, rnum;
+    char ch[] = "swg", player;
+    printf("Enter hoe many turns you wants to play :- ");
+    scanf("%d", &num);
+    while (num != 0)
+    {
+        srand(time(0));
+        rnum = rand() % 3;
+        choice = ch[rnum];
+        printf("\n");
+        printf("Enter first letter of your choice = ");
+        scanf("%s", &player);
+        if (player == 's' && choice == 'g' || player == 'g' && choice == 'w' || player == 'w' && choice == 's')
+        {
+            printf("Player loss the game");
+        }
+        else if (player == 's' && choice == 'w' || player == 'w' && choice == 'g' || player == 'g' && choice == 's')
+        {
+            printf("Player win the game");
+        }
+        else if (player == choice)
+        {
+            printf("Match is draw");
+        }
+        else
+        {
+            printf("Please enter valid entry!!!");
+        }
+        num -= 1;
+        printf("\n");
+        printf("%d turns left", num);
+    }
+}
