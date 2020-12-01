@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int num, sum = 0;
+    printf("enter number for checking number is Deficient or not = ");
+    scanf("%d", &num);
+    for (int i = 1; i <= num / 2; i++)
+    {
+        if (num % i == 0)
+        {
+            sum = sum + i;
+        }
+    }
+    if (sum < num)
+    {
+        printf("Number is Deficient Number");
+    }
+    else
+    {
+        printf("Number is not Deficient Number");
+    }
+}
