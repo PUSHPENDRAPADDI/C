@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+int randomNum, guessNum;
+char x = 'y';
+int main()
+{
+    printf("!!!!---- WELCOME TO THE DICE ROLLING GAME ------!!!!!");
+    while (x == 'y')
+    {
+        srand(time(NULL));
+        randomNum = rand() % 6 + 1;
+        if (randomNum == 1)
+        {
+            printf("-------\n");
+            printf("|     |\n");
+            printf("|  0  |\n");
+            printf("|     |\n");
+            printf("-------\n");
+        }
+        else if (randomNum == 2)
+        {
+            printf("--------\n");
+            printf("|      |\n");
+            printf("| 0  0 |\n");
+            printf("|      |\n");
+            printf("--------\n");
+        }
+        else if (randomNum == 3)
+        {
+            printf("---------\n");
+            printf("|   0   |\n");
+            printf("|   0   |\n");
+            printf("|   0   |\n");
+            printf("---------\n");
+        }
+        else if (randomNum == 4)
+        {
+            printf("--------\n");
+            printf("| 0  0 |\n");
+            printf("|      |\n");
+            printf("| 0  0 |\n");
+            printf("--------\n");
+        }
+        else if (randomNum == 5)
+        {
+            printf("---------\n");
+            printf("| 0   0 |\n");
+            printf("|   0   |\n");
+            printf("| 0   0 |\n");
+            printf("---------\n");
+        }
+        else if (randomNum == 6)
+        {
+            printf("--------\n");
+            printf("| 0  0 |\n");
+            printf("| 0  0 |\n");
+            printf("| 0  0 |\n");
+            printf("--------\n");
+        }
+        printf("Enter y For roll dice again \n:-");
+        scanf("%s", &x);
+    }
+}
