@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Enter number to check existence = ");
+    scanf("%d",&num);
+    int mat1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, flag = 0;
+    for (int i = 0; i < sizeof(mat1) / sizeof(mat1[0]); i++)
+    {
+        if (num == mat1[i])
+        {
+            flag = flag + 1;
+        }
+    }
+    if (flag > 0)
+    {
+        printf("%d is Exist %d times", num, flag);
+    }
+    else
+    {
+        printf("Not exist");
+    }
+}
