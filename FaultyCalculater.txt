@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main()
+{
+    int num1, num2;
+    char op = '+';
+    printf("Enter first number = ");
+    scanf("%d", &num1);
+    printf("Enter second number = ");
+    scanf("%d", &num2);
+    printf("Enter operater for perform = \n");
+    scanf("%s", &op);
+    if (op == '*')
+    {
+        if (num1 == 45 && num2 == 3)
+        {
+            printf("555");
+        }
+        else
+        {
+            printf("%d", num1 * num2);
+        }
+    }
+    else if (op == '+')
+    {
+        if (num1 == 56 && num2 == 9)
+        {
+            printf("77");
+        }
+        else
+        {
+            printf("%d", num1 + num2);
+        }
+    }
+    else if (op == '/')
+    {
+        if (num1 == 56 && num2 == 6)
+        {
+            printf(" 4");
+        }
+        else
+        {
+            printf("%d", num1 / num2);
+        }
+    }
+    else
+    {
+        printf("Enter valid entry");
+    }
+}
