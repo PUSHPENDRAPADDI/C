@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    char sen[]="Hii How are you my friend";
+    char ch;
+
+    int Cs = 0, Cw = 0;
+    for (int i = 0; i < sizeof(sen); i++)
+    {
+        ch = sen[i];
+        if (ch == ' ')
+        {
+            Cs++;
+        }
+        else
+        {
+            Cw++;
+        }
+    }
+    printf("%d is Spaces \n",Cs);
+    printf("%d is Words",Cw);
+}
