@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    char sen[] = "Hii i am pushpendra ", wd, max, ch;
+    // sen = sen + ' ';
+    int Cs = 0, Cw = 0;
+    for (int i = 0; i < sizeof(sen); i++)
+    {
+        ch = sen[i];
+        if (ch != ' ')
+        {
+            wd = wd + ch;
+            printf("%s",wd);
+        }
+        else
+        {
+            int w = sizeof(wd);
+            int m = sizeof(max);
+            if (w > m)
+            {
+                max = wd;
+                wd = ' ';
+            }
+        }
+    }
+    printf("%s is largest word", max);
+    printf("%d is max length", sizeof(max));
+}
