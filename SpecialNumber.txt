@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int num, temp = 0, sum = 0, pow = 1;
+    printf("Enter number to check wether number is special or not = ");
+    scanf("%d",&num);
+    int numo=num;
+    while (num != 0)
+    {
+        temp = num % 10;
+        while (temp != 0)
+        {
+            pow = pow * temp;
+            temp = temp - 1;
+        }
+        sum = sum + pow;
+        pow = 1;
+        num = num / 10;
+    }
+    if (sum == numo)
+    {
+        printf("The number is Special");
+    }
+    else
+    {
+        printf("The number is not Special");
+    }
+}
