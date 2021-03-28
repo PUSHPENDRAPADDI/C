@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int a = 3;
+    int b = 39;
+    // Arithmetic Operaters
+    printf("Add = %d\n", b+a);
+    printf("Sustraction = %d\n", b-a);
+    printf("Division = %d\n", b/a);
+    printf("Multiplication = %d\n", b*a);
+    printf("Remainder = %d\n", b%a);
+    // Remainder is also known as Modulo 
+}
