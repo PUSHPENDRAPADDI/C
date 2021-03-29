@@ -1,0 +1,13 @@
+// This programme is for the format of C
+#include <stdio.h>
+int main()
+{
+    int value1 = 40;
+    float value2 = 40.6;
+    char value3 = 'g';
+    char value4[] = "IT's ME PADDI JI";
+    printf("Value is %d\n", value1);
+    printf("Value is %f\n", value2);
+    printf("Value is %c\n", value3);
+    printf("Value is %s\n", value4);
+}
