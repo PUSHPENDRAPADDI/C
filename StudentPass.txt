@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+int main()
+{
+    int num = 0;
+    printf("Enter the number of students :- \n");
+    scanf("%d", &num);
+    int roll[num], sub1[num], sub2[num], sub3[num], avnum[num];
+    for (int i = 0; i < num; i++)
+    {
+        printf("Enter the roll, sub1 ,sub2, su3 number of %d student :- \n", i);
+        scanf("%d", &roll[i]);
+        scanf("%d", &sub1[i]);
+        scanf("%d", &sub2[i]);
+        scanf("%d", &sub3[i]);
+        avnum[i] = (sub1[i] + sub2[i] + sub3[i]) / 3;
+        printf("%d is the average marks of %d roll no \n", avnum[i], roll[i]);
+    }
+    printf("Roll number whose average marks is greater than 80 \n");
+    for (int i = 0; i < num; i++)
+    {
+        if (avnum[i] > 80)
+        {
+            printf("%d is roll number and average marks is %d\n", roll[i], avnum[i]);
+        }
+        else if (avnum[i] < 40)
+        {
+            printf("%d is roll number and average marks is %d\n", roll[i], avnum[i]);
+        }
+    }
+}
