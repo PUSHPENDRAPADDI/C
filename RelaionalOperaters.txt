@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+     int a = 3;
+    int b = 39;
+     // Relaional Operaters
+    int isTrue = b == a;
+    // isTrue is gives a 0 and 1 value due to int
+    printf("a and b both are equal %d\n", isTrue);
+    isTrue = b!=a;
+    printf("a and b both are not equal %d\n", isTrue);
+    isTrue = b > a;
+    printf("a is less than b %d\n", isTrue);
+    isTrue = b < a;
+    printf("a is greater than b %d\n", isTrue);
+    isTrue = b >= a;
+    printf("a is less than or equal to %d\n", isTrue);
+    isTrue = b <= a;
+    printf("a is greater than or equal to %d\n", isTrue);
+}
