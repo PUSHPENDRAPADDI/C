@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+     int a = 3;
+    int b = 39;
+    // Logical Operation
+    int isTrue = b && a;
+    printf("a AND b  %d\n", isTrue);
+    isTrue = b || a;
+    printf("a OR b  %d\n", isTrue);
+    isTrue = !(b || a);
+    printf("a OR b  %d\n", isTrue);
+    isTrue = !(b && a);
+    printf("a AND b  %d\n", isTrue);
+}
