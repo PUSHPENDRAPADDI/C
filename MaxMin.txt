@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+    int len = 0, mincount = 0, maxcount = 0, max = 0;
+    printf("Enter the length of array :-");
+    scanf("%d", &len);
+    int num[len];
+    printf("enter the elements of array :- ");
+    for (int i = 0; i < len; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+    int min = num[0];
+    for (int i = 0; i < len; i++)
+    {
+        if (min > num[i])
+        {
+            min = num[i];
+            mincount = i;
+        }
+
+        else if (max < num[i])
+        {
+            max = num[i];
+            maxcount = i;
+        }
+    }
+    printf("%d is the min value \n", min);
+    printf("%d is position of min value \n", mincount);
+    printf("%d is the max value \n", max);
+    printf("%d is position of max value \n", );
+}
