@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+    int len1 = 0, len2=0, lenf=0;
+    printf("Enter length of first array :- ");
+    scanf("%d",&len1);
+    printf("Enter the length of second array :-");
+    scanf("%d", &len2);
+    lenf = len1 + len2;
+    int num1[len1], num2[len2], num3[lenf];
+    printf("Enter the element of first array :- ");
+    for (int i = 0; i < len1; i++)
+    {
+        scanf("%d",&num1[i]);
+    }
+    printf("Enter the element of second array :- ");
+    for (int i = 0; i < len2; i++)
+    {
+        scanf("%d",&num2[i]);
+    }
+    printf("Elements are:-\n");
+    for (int i = 0; i < len1; i++)
+    {
+        num3[i] = num1[i];
+        printf("%d\n",num3[i]);
+    }
+    for (int i = 0; i < len2; i++)
+    {
+        num3[len1+i] = num2[i];
+        printf("%d\n",num3[len1+i]);
+    }
+}
