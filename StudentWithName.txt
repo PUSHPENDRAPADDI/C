@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main(){
+    int num = 0;
+    printf("Enter the number of students :- \n");
+    scanf("%d",&num);
+    int roll[num], sub1[num], sub2[num], sub3[num], avnum[num];
+    char name[15];
+    for(int i=0; i<num;i++){
+    printf("Enter the roll, sub1 ,sub2, su3 number of %d student :- \n",i);
+        scanf("%d", &roll[i]);
+        scanf("%c", &name[i]);
+        scanf("%d", &sub1[i]);
+        scanf("%d", &sub2[i]);
+        scanf("%d", &sub3[i]);
+        avnum[i] = (sub1[i]+sub2[i]+sub3[i])/3;
+        printf("%d is the average marks of %d roll no \n", avnum[i], roll[i]);
+    }
+    printf("Roll number whose average marks is greater than 80 \n");
+    for(int i =0;i<num;i++){
+        if(avnum[i] >= 85 && avnum[i] <=100){
+            printf("%d is roll number is exillent\n",roll[i]);
+        }
+        else if(avnum[i]>=75 && avnum[i]<85){
+            printf("%d is roll number is Distinction\n",roll[i]);
+        }
+        else if(avnum[i]>=60 && avnum[i]<75){
+            printf("%d is roll number is First class\n",roll[i]);
+        }
+        else if(avnum[i]>=40 && avnum[i]<60){
+            printf("%d is roll number is Pass\n",roll[i]);
+        }
+        else if(avnum[i]<40){
+            printf("%d is roll number is Poor\n",roll[i]);
+        }
+    }
+}
+
