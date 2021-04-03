@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int len = 0, esum = 0, osum = 0;
+    printf("Enter the length of array :-");
+    scanf("%d", &len);
+    int num[len];
+    printf("enter the elements of %d array:-", len);
+    for (int i = 0; i < len; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+    for (int i = 0; i < len; i++)
+    {
+        if (num[i] % 2 == 0)
+        {
+            esum = esum + num[i];
+        }
+        else
+        {
+            osum = osum + num[i];
+        }
+    }
+    printf("Sum of odd is %d\n", osum);
+    printf("Sum of even is %d\n", esum);
+}
