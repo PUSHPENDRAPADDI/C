@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Enter number for checking number is ugly or not = ");
+    scanf("%d", &num);
+    if (num % 2 == 0 || num % 3 == 0 || num % 5 == 0)
+    {
+        printf("Number is Ugly Number");
+    }
+    else
+    {
+        printf("Number is not Ugly Number");
+    }
+}
